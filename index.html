@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>加密貨幣分析器</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8974855224226868"
+     crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="text-center mb-4">幣安加密貨幣分析器</h1>
+        <div class="position-relative">
+            <button type="button" class="btn btn-link position-absolute top-0 end-0" data-bs-toggle="modal" data-bs-target="#scoreInfoModal">
+                <i class="bi bi-info-circle-fill"></i>
+            </button>
+            <h1 class="text-center mb-4">幣安加密貨幣分析器</h1>
+        </div>
         
         <div class="row mb-4">
             <div class="col-md-12">
@@ -68,7 +75,35 @@
         </div>
     </div>
 
+    <!-- Score Info Modal -->
+    <div class="modal fade" id="scoreInfoModal" tabindex="-1" aria-labelledby="scoreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scoreInfoModalLabel">推薦指數說明</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>推薦指數是綜合以下因素計算的綜合評分：</p>
+                    <ul>
+                        <li>價格變化趨勢分析</li>
+                        <li>24小時交易量表現</li>
+                        <li>市場活躍度評估</li>
+                        <li>技術指標綜合評估</li>
+                    </ul>
+                    <p>分數範圍從0到100，分數越高表示：</p>
+                    <ul>
+                        <li>市場表現越穩定</li>
+                        <li>交易機會越好</li>
+                        <li>風險相對較低</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="script.js"></script>
 </body>
 </html>
