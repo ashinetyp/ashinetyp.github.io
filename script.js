@@ -1,7 +1,7 @@
 class CryptoAnalyzer {
     constructor() {
         this.baseUrl = 'https://api.binance.com/api/v3';
-        this.updateInterval = 60000; // 1 minute
+        this.updateInterval = 5 * 60000; // 5 minute
         this.init();
     }
 
